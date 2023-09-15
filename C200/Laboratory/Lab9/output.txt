@@ -1,0 +1,121 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   Testing Contact Class                    
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Testing getName
+------------------------------------------------------------
+Expected Results
+Nick J Mobley
+Larry Gates
+Sup a man
+This Little Name
+Your Results ~~~~~~~~~~~~~~~~~~~~
+Nick J Mobley
+Larry Gates
+Sup a man
+This Little Name
+------------------------------------------------------------
+Testing __str__
+------------------------------------------------------------
+Expected Results
+Contact: Nick J Mobley - (8123357216)
+Contact: Larry Gates - (48138138)
+Contact: Sup a man - (8541836418)
+Contact: This Little Name - (123456789)
+Your Results ~~~~~~~~~~~~~~~~~~~
+Contact: Nick J Mobley - (8123357216)
+Contact: Larry Gates - (48138138)
+Contact: Sup a man - (8541836418)
+Contact: This Little Name - (123456789)
+------------------------------------------------------------
+Testing call
+------------------------------------------------------------
+Expected Results
+Expected Results
+Dialing Nick ...
+Dialing Larry ...
+Dialing sup ...
+Dialing This ...
+Your Results
+Dialing Nick ...
+Dialing Larry ...
+Dialing Sup ...
+Dialing This ...
+------------------------------------------------------------
+Testing sendBirthdayText
+------------------------------------------------------------
+Expected Results
+To Nick:
+	Happy Birthday Nick!
+To Larry:
+	Happy Birthday Larry!
+To Sup
+	Happy Birthday Sup!
+To Little:
+	Happy Birthday Little!
+Your Reuslts:
+To Nick:
+	 Happy Birthday Nick!
+To Larry:
+	 Happy Birthday Larry!
+To Sup:
+	 Happy Birthday Sup!
+To This:
+	 Happy Birthday This!
+------------------------------------------------------------
+Testing updateNumber
+------------------------------------------------------------
+Expected Results
+Contact: Nick J Mobley - (48128546)
+Contact: Larry Gates - (48126879)
+Contact: Sup a man - (48430546)
+Contact: This Little Name - (26979487)
+Your Results ~~~~~~~~~~~~~~~~~~~
+Contact: Nick J Mobley - (48128546)
+Contact: Larry Gates - (48126879)
+Contact: Sup a man - (48430546)
+Contact: This Little Name - (26979487)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                  Testing PhoneBook Class                   
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Testing get_all_contacts (addContact)
+Data from the file
+['Larry Gates, 1111111111, gatesls@iu.edu, 1.1.1990', 'Josh Baker, 2222222222, josh@iu.edu, 2.20.1995', 'Dr. M Dalkilic, 3333333333, dalkilic@indiana.edu, 4.29.1930', 'Dr. D Williamson, 4444444444, Williamson#indiana.edu, 12.21.1980']
+
+Contact: Larry Gates - (1111111111)
+Contact: Josh Baker - (2222222222)
+Contact: Dr. M Dalkilic - (3333333333)
+Contact: Dr. D Williamson - (4444444444)
+
+Phone Book: 4
+
+------------------------------
+Testing addContact with a dictionary
+	 Contact: Larry Gates - (1111111111)
+	 Contact: Josh Baker - (2222222222)
+	 Contact: Dr. M Dalkilic - (3333333333)
+	 Contact: Dr. D Williamson - (4444444444)
+	 Contact: Nick J Mobley - (8123357216)
+
+------------------------------
+Testing getContactCount (result should be 5)
+	 5 True
+
+------------------------------
+Testing findContact
+	Looking for `Mobley` and found [Contact: Nick J Mobley - (8123357216)]
+	Looking for `Gate` and found []
+
+------------------------------
+Testing groupChat
+
+We are going to send a groupchat
+To Larry:
+	 I got your number saved
+To Josh:
+	 I got your number saved
+To Dr.:
+	 I got your number saved
+To Dr.:
+	 I got your number saved
+To Nick:
+	 I got your number saved
